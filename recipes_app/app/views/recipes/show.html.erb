@@ -1,0 +1,8 @@
+<h1> <%= "#{@recipe.rname} Recipe" %></h1>
+<h3><%=" By #{@recipe.aname}" %></h3>
+<h4> <%= "Ingredients" %></h4>
+ <%= @recipe.ingredients %></br>
+ <h4> <%= "Preparation method:" %></h4>
+<%= @recipe.method %></br>
+<%= link_to "Back to Index",recipes_path %></br>
+  <%= link_to " Edit the recipe",edit_recipe_path(@recipe)%>
